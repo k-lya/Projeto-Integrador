@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Flores - Pergunta</title>
+  <link rel="stylesheet" href="/stylesheet/style.css">
+  <script src="/javascripts/game.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="painel-perguntas">
+    <h3 id="texto-pergunta"><%= questao.pergunta %></h3>
+    <form id="form-resposta">
+      <div class="alternativas">
+        <label>
+          <input type="radio" name="resposta" value="A"> 
+          <span id="alternativaA"><%= questao.alternativaA %></span>
+        </label>
+        <label>
+          <input type="radio" name="resposta" value="B"> 
+          <span id="alternativaB"><%= questao.alternativaB %></span>
+        </label>
+        <label>
+          <input type="radio" name="resposta" value="C"> 
+          <span id="alternativaC"><%= questao.alternativaC %></span>
+        </label>
+      </div>
+      <button type="button" id="btn-responder">Responder</button>
+    </form>
+  </div>
+  </div>
+
+  <div class="painel-jogador">
+    <h2>Painel do Jogador</h2>
+    <p>Perguntas: <span id="perguntas-total"><%= perguntasTotal || 0 %></span></p>
+    <p>Acertos: <span id="acertos-total"><%= acertos || 0 %></span></p>
+    <p>Erros: <span id="erros-total"><%= erros || 0 %></span></p>
+  </div>
+
+    <button id="btn-continuar" style="display: none;">Continuar jogando</button>
+</div>
+
+</body>
+</html>
