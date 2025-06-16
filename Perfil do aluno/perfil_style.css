@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: Nunito;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #27187e;
+    gap: 15px;
+}
+
+.frase-inicio {
+    text-align: center;
+    background-color: #fec78a;
+    border-radius: 0 0 60px 60px;
+    width: 40%;
+    height: 50%;
+    margin-top: -8%;
+    margin-bottom: 25px;
+    padding: 5px 0;
+    font-size: 20px;
+
+}
+
+.dados-titulo h2 {
+    color: #27187e;
+    margin-bottom: 5%;
+}
+
+.container {
+    width: 725px;
+    height: 530px;
+    padding: 10px 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-usuario img {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #27187e;
+}
+
+.imagem-usuario label {
+    display: block;
+    text-align: center;
+    width: 150px;
+    background: #27187e;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 77%;
+    font-size: 12px;
+}
+
+.imagem-usuario input {
+    display: none;
+}
+
+.informacoes {
+    flex: 1;
+    text-align: left;
+    margin-top: -180px;
+    margin-right: 5%;
+    margin-left: 30%;
+
+}
+
+.container-edicao {
+    width: 725px;
+    height: 530px;
+    padding: 10px 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes-editar {
+    flex: 1;
+    text-align: left;
+    margin-top: -230px;
+    margin-right: 5%;
+    margin-left: 30%;
+
+}
+
+.input-usuario input {
+    width: 90%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    transition: border-color 0.3s;
+    font-size: 14px;
+
+}
+
+input:focus {
+    outline: none;
+    border-color: #27187e;
+}
+
+.input-usuario label {
+    text-align: left;
+    width: auto;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-right: 25%;
+    font-size: 14px;
+
+}
+
+label {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+
+/*Genero --------------------------- */
+
+.genero-usuario .opcoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.genero-usuario {
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Botoes ----------------------------*/
+.botao-editar-perfil {
+    display: inline-block;
+    background-color: #27187e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao-editar-perfil:hover {
+    background-color: #fec78a;
+    color: #27187e;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.botao-salvar-perfil {
+    background-color: #27187e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.botao-salvar-perfil:hover {
+    background-color: #fec78a;
+    color: #27187e;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.file-editar {
+    color: #27187e;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+.file-editar:hover {
+    background-color: #fec78a;
+    color: #27187e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* Select-------------------------------*/
+
+.input-usuario select {
+    width: 90%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding: 0 10px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: #27187e;
+}
+
+/*Responsividade*/
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 900px) {
+    .container, 
+    .container-edicao {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .frase-inicio {
+        width: 70%;
+        margin-top: -7%;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .imagem-usuario img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .imagem-usuario label {
+        margin-right: 0;
+        width: 120px;
+    }
+
+    .informacoes,
+    .informacoes-editar {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .input-usuario input,
+    .input-usuario select {
+        width: 100%;
+    }
+
+    .botao-editar-perfil,
+    .botao-salvar-perfil {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+        justify-content: flex-start;
+    }
+
+    .frase-inicio {
+        width: 90%;
+        font-size: 16px;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .imagem-usuario {
+        text-align: center;
+    }
+
+    .imagem-usuario img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imagem-usuario label {
+        margin: 10px auto;
+    }
+
+    .genero-usuario .opcoes {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .dados-titulo h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .container,
+    .container-edicao {
+        padding: 15px;
+    }
+
+    .input-usuario label {
+        font-size: 12px;
+    }
+
+    .botao-editar-perfil,
+    .botao-salvar-perfil {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Correção para iOS */
+@supports (-webkit-touch-callout: none) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Garante que nada ultrapasse os limites em telas pequenas */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+

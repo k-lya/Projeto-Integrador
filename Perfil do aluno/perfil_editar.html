@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil | OlimpiApp</title>
+    <link rel="stylesheet" href="perfil_style.css">
+    <script src="javascripts_editar.js" defer></script>
+    
+</head>
+
+<body>
+
+    <div class="frase-inicio">
+        <header>Customize seu perfil de forma simples e rápida</header>
+    </div>
+
+    <div class="container-edicao">
+
+        <div class="imagem-usuario">
+            <img src="images/perfil_usuario.jpg" alt="foto de perfil" id="foto-perfil">
+            <label for="input-file" class="file-editar">Atualizar imagem</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        </div>
+
+        <div class="informacoes-editar">
+
+            <div class="dados-titulo">
+                <h2>Dados Pessoais</h2>
+            </div>
+
+            <div class="input-usuario">
+                <label for="name">Nome</label>
+                <input type="text" class="input-us" id="nome" required>
+            </div>
+
+            <div class="input-usuario">
+                <label for="nascimento" class="input-us">Data de nascimento</label>
+                <input type="date" id="nascimento" placeholder="dd/mm/aaaa">
+            </div>
+
+            <div class="input-usuario">
+                <label for="ano">Ano escolar</label>
+                <select id="ano" name="ano" required>
+                    <option value="" disabled selected>Selecione seu ano</option>
+                    <option value="6">6º ano (Nível 1)</option>
+                    <option value="7">7º ano (Nível 1)</option>
+                    <option value="8">8º ano (Nível 2)</option>
+                    <option value="9">9º ano (Nível 2)</option>
+                    <option value="1EM">1º ano do Ensino Médio (Nível 3)</option>
+                    <option value="2EM">2º ano do Ensino Médio (Nível 3)</option>
+                    <option value="3EM">3º ano do Ensino Médio (Nível 3)</option>
+                    <option value="outro">Outro (não listado)</option>
+                </select>
+            </div>
+
+            <div class="input-usuario">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" required>
+                    <option value="" disabled selected>Selecione seu estado</option>
+                    <optgroup label="Região Norte">
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                    </optgroup>
+
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MT">Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                        <option value="DF">Distrito Federal (DF)</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="MG">Minhas Gerais (MG)</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="SP">São Paulo (SP)</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="genero-usuario">
+                <label>Gênero</label>
+                <div class="opcoes">
+                    <label><input type="radio" name="genero" checked> Feminino</label>
+                    <label><input type="radio" name="genero"> Masculino</label>
+                    <label><input type="radio" name="genero"> Prefiro não informar</label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-editar">
+            <button type="submit" class="botao-salvar-perfil">
+            Salvar Alterações
+        </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
