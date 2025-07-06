@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Múltiplos Comuns e MMC</title>
+  <link rel="stylesheet" href="style-conteudo.css">
+</head>
+<body>
+
+<section>
+  <h2>Múltiplos Comuns e Mínimo Múltiplo Comum (MMC)</h2>
+  <p>
+    Quando falamos de múltiplos comuns, estamos procurando por números que são múltiplos de dois ou mais números ao mesmo tempo.
+    Imagine que você tem várias "listas de pulos" (os múltiplos de cada número); os múltiplos comuns são os números que aparecem em todas essas listas.
+    Este conceito é fundamental para entender o Mínimo Múltiplo Comum (MMC), uma ferramenta poderosa para resolver problemas na matemática.
+  </p>
+
+  <h3>O que são Múltiplos Comuns?</h3>
+  <p>
+    Um múltiplo comum é um número que pode ser dividido, sem deixar resto, por todos os números que você está considerando.
+    É como um "ponto de encontro" nas sequências de múltiplos de cada número.
+  </p>
+
+  <h4>Entendendo com Exemplos:</h4>
+  <p><strong>Múltiplos de 2:</strong> M(2) = {0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, …}</p>
+  <p><strong>Múltiplos de 3:</strong> M(3) = {0, 3, 6, 9, 12, 15, 18, 21, 24, …}</p>
+  <p><strong>Múltiplos comuns de 2 e 3:</strong> {0, 6, 12, 18, 24, …}</p>
+
+  <p><strong>Múltiplos de 4:</strong> M(4) = {0, 4, 8, 12, 16, 20, 24, 28, 32, 36, …}</p>
+  <p><strong>Múltiplos de 6:</strong> M(6) = {0, 6, 12, 18, 24, 30, 36, 42, …}</p>
+  <p><strong>Múltiplos comuns de 4 e 6:</strong> {0, 12, 24, 36, …}</p>
+
+  <h3>Mínimo Múltiplo Comum (MMC)</h3>
+  <p>
+    Dentre todos os múltiplos comuns de dois ou mais números, há um que se destaca: o menor múltiplo comum diferente de zero.
+    Esse é o Mínimo Múltiplo Comum (MMC).
+  </p>
+
+  <h4>Encontrando o MMC:</h4>
+  <p><strong>MMC(2, 3):</strong> múltiplos comuns = {0, 6, 12, 18, …} → <strong>MMC = 6</strong></p>
+  <p><strong>MMC(4, 6):</strong> múltiplos comuns = {0, 12, 24, 36, …} → <strong>MMC = 12</strong></p>
+
+  <h3>Para que serve o MMC? (Exemplos Práticos)</h3>
+
+  <h4>Problemas de Encontro ou Coincidência (Ciclos):</h4>
+  <p><strong>Exemplo 1:</strong> Dois ônibus partem juntos às 8h. Um sai a cada 10 min, o outro a cada 15 min. Quando sairão juntos novamente?</p>
+  <p>
+    Múltiplos de 10: {0, 10, 20, 30, 40, 50, 60, …} <br>
+    Múltiplos de 15: {0, 15, 30, 45, 60, …} <br>
+    <strong>MMC(10, 15) = 30</strong> → Sairão juntos novamente às <strong>8h30</strong>.
+  </p>
+
+  <p><strong>Exemplo 2:</strong> Um semáforo A fica verde a cada 40 s e o B a cada 50 s. Quando ficarão verdes juntos novamente?</p>
+  <p>
+    Múltiplos de 40: {0, 40, 80, 120, 160, 200, …} <br>
+    Múltiplos de 50: {0, 50, 100, 150, 200, …} <br>
+    <strong>MMC(40, 50) = 200</strong> → Ficarão verdes juntos novamente em <strong>200 segundos</strong>.
+  </p>
+
+  <h4>Operações com Frações (Para o futuro!)</h4>
+  <p>
+    Para somar ou subtrair frações com denominadores diferentes, como <code>1/2 + 1/3</code>, é necessário encontrar um denominador comum.
+    O MMC dos denominadores é o menor denominador comum mais eficiente.
+  </p>
+  <p>
+    Exemplo: MMC(2, 3) = 6 <br>
+    <code>1/2 + 1/3 = 3/6 + 2/6 = 5/6</code>
+  </p>
+</section>
+
+</body>
+</html>

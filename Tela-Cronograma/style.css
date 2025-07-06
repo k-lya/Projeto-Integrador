@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----------------------------------
+  BASE
+---------------------------------- */
+body {
+  margin: 0;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  /* height: 100vh; */
+}
+
+/* ----------------------------------
+  BOTÕES MOSTRAR / ESCONDER SIDEBAR
+---------------------------------- */
+.btn-mostrar-sidebar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: #27187e;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-esconder-sidebar {
+  position: absolute;
+  top: 15px;
+  left: 180px;
+  border-radius: 50%;
+  background-color: #d9dcf2;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.btn-mostrar-sidebar img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.btn-esconder-sidebar img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ----------------------------------
+  SIDEBAR
+---------------------------------- */
+.sidebar {
+  position: relative;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  box-sizing: border-box;
+  background: #a5aad2;
+  padding: 10px;
+  padding-top: 25px;
+  transition: transform 0.3s ease;
+  border-top-right-radius: 8px;
+  overflow-x: hidden;
+}
+
+.sidebar.hidden {
+  transform: translateX(-320px);
+  pointer-events: none;
+}
+
+/* ----------------------------------
+  PROGRESSO
+---------------------------------- */
+#text-progress {
+  text-align: center;
+  font-size: 1em;
+  color: #27187e;
+  margin-bottom: 10px;   
+  font-weight: bold;
+  margin-top: -15px;
+  
+}
+
+#progress-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #27187e;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #fec78a;
+  border-radius: 4px 0 0 4px;
+  transition: width 0.3s ease;
+  padding-top: 10px;
+}
+
+#progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+  user-select: none;
+}
+
+#image-objetivo{
+  width: 45px;
+  height: auto;
+  margin-left: 40%;
+  margin-bottom: -11px;
+}
+
+.divisor{
+  margin-top: 25px;
+}
+
+.divisor p{
+  color: white;
+  margin-bottom:5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* ----------------------------------
+  CONTEÚDO DA SIDEBAR
+---------------------------------- */
+.item {
+  margin-bottom: 10px;
+  color: #27187e;
+}
+
+.titulo {
+  position: relative;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.titulo:hover {
+  background-color: #d9dcf2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(2px);
+}
+
+.titulo:hover::before {
+  width: 5px;
+}
+
+.subitens {
+  margin-left: 15px;
+  display: none;
+  padding-top: 5px;
+}
+
+.subitens.mostrar {
+  display: block;
+}
+
+.subitem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.subitem label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 0px solid #27187e;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #27187e;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* ----------------------------------
+  CONTEÚDO CENTRAL
+---------------------------------- */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.nivel-cronograma {
+  margin: auto;
+  text-align: center;
+  background-color: #fec78a;
+  border-radius: 0 0 60px 60px;
+  width: 30%;
+  height: 10%;
+  margin-top: -2%;
+  padding: 3px 0;
+  font-size: 12px;
+}
+
+.nivel-cronograma h1 {
+  color: #27187e;
+}
+
+.frase-inicio {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.frase-inicio h2 {
+  color: #27187e;
+  text-align: center;
+  line-height: 1.5;
+  position: relative;
+  top: 40px;
+  font-size: 25px;
+}
+
+.imagem-calculadora {
+  width: 70%;
+  margin: auto;
+  margin-left: 25%;
+  position: relative;
+  bottom: 20px;
+}
