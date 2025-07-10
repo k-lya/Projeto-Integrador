@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
+* {
     font-family: Nunito;
     margin: 0;
     box-sizing: border-box;
     /*background-color: #27187e;*/
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,66 +15,99 @@ body{
     background-color: #27187e;
 }
 
-.container{
+/* tipo de usuario -------------*/
+.tipo-usuario {
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.opcoes {
+    display: flex;
+    gap: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+
+.titulo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #27187e;
+}
+
+/* tipo de usuario -------------*/
+
+.container {
     position: relative;
     width: 500px;
     height: 550px;
-    padding:10px 30px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-}
-.container-cadastro{
-    position: relative;
-    width: 550px;
-    height: 590px;
-    padding:10px 30px;
+    padding: 10px 30px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-.titulo-login{
+.container-cadastro {
+    position: relative;
+    width: 550px;
+    height: 590px;
+    padding: 10px 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.titulo-login {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 20px 0 25px 0;
 }
 
-p{
+p {
     color: #80868c;
 }
 
-header{
+header {
     color: #27187e;
     font-weight: 400;
 }
 
-.titulo-login header{
-    font-size: 30px;
+.titulo-login header {
+    font-size: 28px;
     margin-bottom: 5px;
 }
 
-.input-usuario{
+.input-usuario {
     position: relative;
     width: 100%;
 }
-.input-usuario label{
+
+.input-usuario label {
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 15px;
     transition: .15s ease-in-out;
+    font-size: 15px;
 }
 
-.input-usuario input{
+.input-usuario input {
     width: 100%;
-    height: 50px;
+    height: 40px;
 }
 
-.input-usuario .input-us{
-    font-size: 1em;
+.input-usuario .input-us {
     padding-left: 15px;
     margin-bottom: 15px;
     border: 1px solid #27187e;
@@ -82,16 +115,17 @@ header{
     outline: none;
 }
 
-.input-usuario input[type="password"]{
+.input-usuario input[type="password"] {
     margin-bottom: 10px;
 }
 
-.input-usuario .input-us:focus{
+.input-usuario .input-us:focus {
     outline: 2px solid #27187e;
 }
 
-.input-us:focus ~ label, .input-us:valid ~ label{
-    top:-8px;
+.input-us:focus~label,
+.input-us:valid~label {
+    top: -8px;
     left: 12px;
     font-size: 12px;
     color: #27187e;
@@ -99,34 +133,34 @@ header{
     padding: 0 5px;
 }
 
-.input-us:valid ~label{
-    color:#27187e;
+.input-us:valid~label {
+    color: #27187e;
 }
 
-.esqueceu-senha{
+.esqueceu-senha {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
 }
 
-#check{
+#check {
     margin-right: 10px;
 }
 
-section{
+section {
     display: flex;
     align-items: center;
     font-size: 14px;
 }
 
-section .esqueceu-pass{
+section .esqueceu-pass {
     font-weight: 500;
     text-decoration: none;
-    color:#27187e
+    color: #27187e
 }
 
-.input-submit{
-    font-size: 15px;
+.input-submit {
+    font-size: 16px;
     color: #fff;
     background-color: #27187e;
     border: none;
@@ -134,19 +168,34 @@ section .esqueceu-pass{
     cursor: pointer;
 }
 
-.input-submit:hover{
+.input-submit-login {
+    font-size: 16px;
+    margin-top: 25px;
+    color: #fff;
+    background-color: #27187e;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.input-submit:hover {
     transition-duration: 0.4s;
-    background: #04AA6D; 
+    background: #04AA6D;
     color: white;
 }
 
-.other-option{
+.input-submit-login:hover {
+    transition-duration: 0.4s;
+    background: #04AA6D;
+    color: white;
+}
+.other-option {
     position: relative;
     width: 100%;
     margin: 30px 0;
 }
 
-.ou-opcao{
+.ou-opcao {
     position: absolute;
     color: #27187e;
     font-weight: bold;
@@ -156,76 +205,75 @@ section .esqueceu-pass{
     padding: 10px;
 }
 
-hr{
+hr {
     border: 1px solid #ddd;
 }
 
-.entrar-conta{
+.entrar-conta {
     display: flex;
     gap: 15px;
 }
 
-button{
+button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 25px;
     cursor: pointer;
-    
+
 }
 
-
-.entrar-google{
-    width:100%;
+.entrar-google {
+    width: 100%;
     height: 50px;
     padding: 0 30px;
     background: #fff;
     border: 1px solid #27187e;
 }
 
-.entrar-google img{
+.entrar-google img {
     width: 25px;
 }
 
-.entrar-google p{
+.entrar-google p {
     font-size: 15px;
-    color:  #27187e;
+    color: #27187e;
     font-weight: 400;
     width: 90%;
 }
 
-.entrar-google:hover{
+.entrar-google:hover {
     border: 2px solid #27187e;
     transition: 0.2s;
-    
+
 }
 
-.fazer-login{
-    padding-top: 20px;
-    font-size: 15px;
+.fazer-login {
+    padding-top: 10px;
+    font-size: 14px;
     text-align: center;
 }
 
-.fazer-login a{
+.fazer-login a {
     color: #27187e;
     text-decoration: none;
 }
 
-.fazer-login a:hover{
+.fazer-login a:hover {
     font-weight: bold;
 }
 
-.fazer-cadastro{
-    padding-top: 40px;
+.fazer-cadastro {
+    margin-top: 12px;
     font-size: 15px;
     text-align: center;
-
 }
-.fazer-cadastro a{
+
+.fazer-cadastro a {
     color: #27187e;
     text-decoration: none;
 }
 
-.fazer-cadastro a:hover{
+.fazer-cadastro a:hover {
     font-weight: bold;
 }
