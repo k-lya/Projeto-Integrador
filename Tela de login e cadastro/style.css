@@ -25,7 +25,7 @@ body {
 
 .opcoes {
     display: flex;
-    gap: 50px;
+    gap: 130px;
     margin-top: 5px;
     margin-bottom: 15px;
 }
@@ -46,10 +46,10 @@ body {
 
 /* tipo de usuario -------------*/
 
-.container {
+.container-login {
     position: relative;
-    width: 500px;
-    height: 550px;
+    width: 490px;
+    height: 402px;
     padding: 10px 30px;
     background: #fff;
     border: 1px solid #ddd;
@@ -59,8 +59,8 @@ body {
 
 .container-cadastro {
     position: relative;
-    width: 550px;
-    height: 590px;
+    width: 490px;
+    height: 480px;
     padding: 10px 30px;
     background: #fff;
     border: 1px solid #ddd;
@@ -87,6 +87,7 @@ header {
 .titulo-login header {
     font-size: 28px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .input-usuario {
@@ -161,6 +162,7 @@ section .esqueceu-pass {
 
 .input-submit {
     font-size: 16px;
+    margin-top: 12px;
     color: #fff;
     background-color: #27187e;
     border: none;
@@ -170,7 +172,7 @@ section .esqueceu-pass {
 
 .input-submit-login {
     font-size: 16px;
-    margin-top: 25px;
+    margin-top: 30px;
     color: #fff;
     background-color: #27187e;
     border: none;
@@ -249,7 +251,7 @@ button {
 }
 
 .fazer-login {
-    padding-top: 10px;
+    margin-top: 10px;
     font-size: 14px;
     text-align: center;
 }
