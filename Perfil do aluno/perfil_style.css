@@ -11,7 +11,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: #27187e;
     gap: 15px;
 }
@@ -21,10 +20,9 @@ body {
     background-color: #fec78a;
     border-radius: 0 0 60px 60px;
     width: 40%;
-    height: 50%;
-    margin-top: -8%;
+    padding: 15px;
+    margin-top: -2px;
     margin-bottom: 25px;
-    padding: 5px 0;
     font-size: 20px;
 
 }
@@ -35,7 +33,7 @@ body {
 }
 
 .container {
-    width: 725px;
+    width: 680px;
     height: 530px;
     padding: 10px 30px;
     background: #fff;
@@ -44,7 +42,8 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.imagem-usuario img {
+
+.imagem-usuario img{
     margin-top: 30px;
     margin-bottom: 8px;
     width: 150px;
@@ -78,124 +77,75 @@ body {
     margin-top: -180px;
     margin-right: 5%;
     margin-left: 30%;
-
+    font-size: 1.2rem;
 }
-
-.container-edicao {
-    width: 725px;
-    height: 530px;
-    padding: 10px 30px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.informacoes-editar {
+.informacoes-edicao {
     flex: 1;
     text-align: left;
-    margin-top: -230px;
+    margin-top: -236px;
     margin-right: 5%;
     margin-left: 30%;
-
+    font-size: 1.2rem;
 }
 
-.input-usuario input {
-    width: 90%;
-    height: 35px;
+.informacoes-edicao h2 {
+    color: #27187e;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.informacoes h2 {
+    color: #27187e;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.form-grupo input,
+.form-grupo select {
+    width: 100%;
+    height: 40px;
+    padding: 10px 12px;
+    font-size: 1.1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-top: 2px;
-    margin-bottom: 5px;
-    transition: border-color 0.3s;
-    font-size: 14px;
-
+    transition: border-color 0.3s ease;
 }
 
-input:focus {
+.form-grupo input:focus,
+.form-grupo select:focus {
     outline: none;
     border-color: #27187e;
 }
 
-.input-usuario label {
-    text-align: left;
-    width: auto;
-    font-weight: bold;
-    margin-top: 2px;
-    margin-right: 25%;
-    font-size: 14px;
-
-}
-
-label {
-    font-size: 14px;
-    margin-top: 2px;
-}
-
-
-/*Genero --------------------------- */
-
-.genero-usuario .opcoes {
-    display: flex;
-    gap: 15px;
-    margin-top: 5px;
-    font-size: 10px;
-}
-
-.genero-usuario {
-    font-weight: bold;
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Botoes ----------------------------*/
-.botao-editar-perfil {
-    display: inline-block;
+.botao-editar-perfil button {
     background-color: #27187e;
     color: white;
     border: none;
     border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    margin-left: 40%;
-    margin-top: 10px;
-    text-decoration: none;
+    width: 45%;
+    margin-left: 28%;
+    margin-top: 15px;
     text-align: center;
 }
 
-.botao-editar-perfil:hover {
-    background-color: #fec78a;
-    color: #27187e;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.botao-salvar-perfil {
-    background-color: #27187e;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    margin-left: 40%;
-    margin-top: 10px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.botao-salvar-perfil:hover {
+.botao-editar-perfil button:hover {
     background-color: #fec78a;
     color: #27187e;
     transform: translateY(-1px);
@@ -203,158 +153,47 @@ label {
 }
 
 .file-editar {
-    color: #27187e;
+    background-color: #27187e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .file-editar:hover {
     background-color: #fec78a;
     color: #27187e;
+}
+
+#input-file {
+    display: none;
+}
+
+.botao-salvar-perfil button {
+    background-color: #27187e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 55%;
+    margin-left: 28%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.botao-salvar-perfil button:hover {
+    background-color: #fec78a;
+    color: #27187e;
+    transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-
 }
-
-
-/* Select-------------------------------*/
-
-.input-usuario select {
-    width: 90%;
-    height: 35px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 2px;
-    margin-bottom: 5px;
-    font-size: 14px;
-    padding: 0 10px;
-
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-    font-weight: bold;
-}
-
-select {
-    padding: 10px;
-    transition: border-color 0.3s;
-}
-
-select:focus {
-    outline: none;
-    border-color: #27187e;
-}
-
-/*Responsividade*/
-/* ========== RESPONSIVIDADE ========== */
-@media (max-width: 900px) {
-    .container, 
-    .container-edicao {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-        margin: 20px 0;
-    }
-
-    .frase-inicio {
-        width: 70%;
-        margin-top: -7%;
-        border-radius: 0 0 40px 40px;
-    }
-
-    .imagem-usuario img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .imagem-usuario label {
-        margin-right: 0;
-        width: 120px;
-    }
-
-    .informacoes,
-    .informacoes-editar {
-        margin: 20px 0 0 0;
-        width: 100%;
-    }
-
-    .input-usuario input,
-    .input-usuario select {
-        width: 100%;
-    }
-
-    .botao-editar-perfil,
-    .botao-salvar-perfil {
-        width: 100%;
-        margin: 20px 0 0 0;
-    }
-}
-
-@media (max-width: 600px) {
-    body {
-        padding: 20px;
-        justify-content: flex-start;
-    }
-
-    .frase-inicio {
-        width: 90%;
-        font-size: 16px;
-        border-radius: 0 0 30px 30px;
-    }
-
-    .imagem-usuario {
-        text-align: center;
-    }
-
-    .imagem-usuario img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .imagem-usuario label {
-        margin: 10px auto;
-    }
-
-    .genero-usuario .opcoes {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .dados-titulo h2 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .container,
-    .container-edicao {
-        padding: 15px;
-    }
-
-    .input-usuario label {
-        font-size: 12px;
-    }
-
-    .botao-editar-perfil,
-    .botao-salvar-perfil {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-}
-
-/* Correção para iOS */
-@supports (-webkit-touch-callout: none) {
-    input, select, textarea {
-        font-size: 16px !important;
-    }
-}
-
-/* Garante que nada ultrapasse os limites em telas pequenas */
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-

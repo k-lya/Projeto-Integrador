@@ -15,110 +15,44 @@
     </div>
 
     <div class="container">
+        <form action="" method="">
 
-        <div class="imagem-usuario">
-            <img src="images/perfil_usuario.jpg" alt="foto de perfil">
-        </div>
+            <div class="imagem-usuario">
+                <img src="images/perfil_usuario.jpg" alt="foto de perfil">
+            </div>
 
-        <div class="informacoes">
-
-            <div class="dados-titulo">
+            <div class="informacoes">
                 <h2>Dados Pessoais</h2>
-            </div>
 
-            <div class="input-usuario">
-                <label for="name">Nome</label>
-                <input type="text" class="input-us" id="nome" required>
-            </div>
+                <div class="form-grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
 
-            <div class="input-usuario">
-                <label for="nascimento" class="input-us">Data de nascimento</label>
-                <input type="date" id="nascimento" placeholder="dd/mm/aaaa">
-            </div>
+                <div class="form-grupo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <div class="input-usuario">
-                <label for="ano">Ano escolar</label>
-                <select id="ano" name="ano" required>
-                    <option value="" disabled selected>Selecione seu ano</option>
-                    <option value="6">6º ano (Nível 1)</option>
-                    <option value="7">7º ano (Nível 1)</option>
-                    <option value="8">8º ano (Nível 2)</option>
-                    <option value="9">9º ano (Nível 2)</option>
-                    <option value="1EM">1º ano do Ensino Médio (Nível 3)</option>
-                    <option value="2EM">2º ano do Ensino Médio (Nível 3)</option>
-                    <option value="3EM">3º ano do Ensino Médio (Nível 3)</option>
-                    <option value="outro">Outro (não listado)</option>
-                </select>
-            </div>
+                <div class="form-grupo">
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
 
-            <div class="input-usuario">
-                <label for="estado">Estado</label>
-                <select id="estado" name="estado" required>
-                    <option value="" disabled selected>Selecione seu estado</option>
-                    <optgroup label="Região Norte">
-                        <option value="AC">Acre (AC)</option>
-                        <option value="AP">Amapá (AP)</option>
-                        <option value="AM">Amazonas (AM)</option>
-                        <option value="PA">Pará (PA)</option>
-                        <option value="RO">Rondônia (RO)</option>
-                        <option value="RR">Roraima (RR)</option>
-                        <option value="TO">Tocantins (TO)</option>
-                    </optgroup>
+                <div class="form-grupo">
+                    <label for="tipo_usuario">Tipo de usuário</label>
+                    <input type="text" id="tipo_usuario" name="tipo_usuario" required>
+                </div>
 
-                    <optgroup label="Região Nordeste">
-                        <option value="AL">Alagoas (AL)</option>
-                        <option value="BA">Bahia (BA)</option>
-                        <option value="CE">Ceará (CE)</option>
-                        <option value="MA">Maranhão (MA)</option>
-                        <option value="PB">Paraíba (PB)</option>
-                        <option value="PE">Pernambuco (PE)</option>
-                        <option value="PI">Piauí (PI)</option>
-                        <option value="RN">Rio Grande do Norte (RN)</option>
-                        <option value="SE">Sergipe (SE)</option>
-                    </optgroup>
 
-                    <optgroup label="Região Centro-Oeste">
-                        <option value="GO">Goiás (GO)</option>
-                        <option value="MT">Mato Grosso (MT)</option>
-                        <option value="MS">Mato Grosso do Sul (MS)</option>
-                        <option value="DF">Distrito Federal (DF)</option>
-                    </optgroup>
 
-                    <optgroup label="Região Sudeste">
-                        <option value="ES">Espírito Santo (ES)</option>
-                        <option value="MG">Minhas Gerais (MG)</option>
-                        <option value="RJ">Rio de Janeiro (RJ)</option>
-                        <option value="SP">São Paulo (SP)</option>
-                    </optgroup>
-
-                    <optgroup label="Região Sul">
-                        <option value="PR">Paraná (PR)</option>
-                        <option value="RS">Rio Grande do Sul (RS)</option>
-                        <option value="SC">Santa Catarina (SC)</option>
-                    </optgroup>
-                </select>
-            </div>
-
-            <div class="genero-usuario">
-
-                <label>Gênero</label>
-                <div class="opcoes">
-                    <label><input type="radio" name="genero" checked> Feminino</label>
-                    <label><input type="radio" name="genero"> Masculino</label>
-                    <label><input type="radio" name="genero"> Prefiro não informar</label>
+                <div class="botao-editar-perfil">
+                    <button type="submit">Editar perfil</button>
                 </div>
             </div>
-
-        </div>
-
-        <div class="container-editar">
-            <a href="perfil_editar.html" class="botao-editar-perfil">
-                Editar Perfil
-            </a>
-        </div>
-
     </div>
-
 </body>
 
 </html>
+
+
