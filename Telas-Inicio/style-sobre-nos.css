@@ -1,0 +1,78 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    color: #27187e;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.apresentacao {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.apresentacao p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.blocos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.bloco {
+    flex: 1 1 300px;
+    background-color: #f0f0f0;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.bloco:hover {
+    transform: translateY(-5px);
+}
+
+.bloco h2 {
+    color: #27187e;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.bloco p {
+    font-size: 17px;
+    text-align: justify;
+}
+
